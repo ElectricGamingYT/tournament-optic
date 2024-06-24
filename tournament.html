@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e3a5c; /* Dark blue background */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #1e3a5c; /* Blue background */
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+            background: ##1e3a5c;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tournament-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1e3a5c; /* Dark blue text */
+        }
+        .participants, .schedule, .results {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #1e3a5c; /* Dark blue background */
+            border-radius: 5px;
+            color: rgb(252, 252, 252)
+        }
+        .participants ul, .schedule ul, .results ul {
+            list-style: none;
+            padding: 0;
+        }
+        .participants li, .schedule li, .results li {
+            background: #2d5d8a; /* Slightly lighter blue background */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .schedule .match {
+            display: flex;
+            justify-content: space-between;
+        }
+        .schedule .match span {
+            flex: 1;
+            text-align: center;
+        }
+        /* Add styles for white accents */
+        .accent-white {
+            color: #ffffff;
+            background-color: ##1e3a5c;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tournament Name</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="tournament-title">
+                <h2 class="accent-white">Participants</h2>
+            </div>
+            <div class="participants">
+                <ul><center>
+                    <li>Player 1</li>
+                    <li>Player 2</li>
+                    <li>Player 3</li>
+                    <li>Player 4</li>
+                    <li>Player 5</li>
+                    <li>Player 6</li>
+                    <li>Player 7</li>
+                    <li>Player 8</li>
+                </ul>
+            </div>
+            <div class="tournament-title">
+                <h2 class="accent-white">Match Schedule</h2>
+            </div>
+            <div class="schedule">
+                <ul><>
+                    <li class="match">
+                        <span>Player 1</span>
+                        <span>vs</span>
+                        <span>Player 2</span>
+                    </li>
+                    <li class="match">
+                        <span>Player 3</span>
+                        <span>vs</span>
+                        <span>Player 4</span>
+                    </li>
+                    <li class="match">
+                        <span>Player 5</span>
+                        <span>vs</span>
+                        <span>Player 6</span>
+                    </li>
+                    <li class="match">
+                        <span>Player 7</span>
+                        <span>vs</span>
+                        <span>Player 8</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tournament-title">
+                <h2 class="accent-white">Results</h2>
+            </div>
+            <div class="results">
+                <ul><center>
+                    <li>Player 1 def. Player 2</li>
+                    <li>Player 3 def. Player 4</li>
+                    <li>Player 5 def. Player 6</li>
+                    <li>Player 7 def. Player 8</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
