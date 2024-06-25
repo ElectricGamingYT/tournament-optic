@@ -31,7 +31,7 @@
         }
         .content {
             padding: 20px;
-            background: ##1e3a5c;
+            background: #1e3a5c;
             margin-top: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,18 +41,18 @@
             margin-bottom: 20px;
             color: #1e3a5c; /* Dark blue text */
         }
-        .participants, .schedule, .results {
+        .participants, .schedule, .results, .rounds {
             margin-bottom: 20px;
             padding: 10px;
             background-color: #1e3a5c; /* Dark blue background */
             border-radius: 5px;
-            color: rgb(252, 252, 252)
+            color: rgb(252, 252, 252);
         }
-        .participants ul, .schedule ul, .results ul {
+        .participants ul, .schedule ul, .results ul, .rounds ul {
             list-style: none;
             padding: 0;
         }
-        .participants li, .schedule li, .results li {
+        .participants li, .schedule li, .results li, .rounds li {
             background: #2d5d8a; /* Slightly lighter blue background */
             margin: 5px 0;
             padding: 10px;
@@ -69,71 +69,95 @@
         /* Add styles for white accents */
         .accent-white {
             color: #ffffff;
-            background-color: ##1e3a5c;
+            background-color: #1e3a5c;
             padding: 5px 10px;
             border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Tournament Name</h1>
+    <header><font size="5">
+        <h1>Optic Turnament</h1>
     </header>
     <div class="container">
         <div class="content">
             <div class="tournament-title">
-                <h2 class="accent-white">Participants</h2>
+                <h2 class="accent-white">Echipe</h2>
             </div>
-            <div class="participants">
-                <ul><center>
-                    <li>Player 1</li>
-                    <li>Player 2</li>
-                    <li>Player 3</li>
-                    <li>Player 4</li>
-                    <li>Player 5</li>
-                    <li>Player 6</li>
-                    <li>Player 7</li>
-                    <li>Player 8</li>
+            <div class="Echipele">
+                <ul>
+                    <li>Corcodus: victor123 (31476) + el comandante (33598)</li>
+                    <li>Clanu Borcan: Pingu (5333) + Vamp (30513)</li>
+                    <li>Magici Anului: Eduard#TragPentruLosVagos (29708) + Ștefan_rupe(28776)</li>
+                    <li>Drogații: Luca (23966) + Zzdenis (16689)</li>
+                    <li>Nuntasii: Falfi (13811) + alexutzuu (-69)</li>
+                    <li>Clanu Iepelor: Alex (5) + Mocanu (20378 )</li>
                 </ul>
             </div>
             <div class="tournament-title">
-                <h2 class="accent-white">Match Schedule</h2>
+                <h2 class="accent-white">Runde</h2>
             </div>
-            <div class="schedule">
-                <ul><>
-                    <li class="match">
-                        <span>Player 1</span>
-                        <span>vs</span>
-                        <span>Player 2</span>
+            <div class="rounds">
+                <center>
+                <ul>
+                    <li class="round">
+                        <h3><font size="6">Runda 1</font></h3>
+                        <ul class="matches">
+                            <li class="match">
+                                <span>Echipa 1</span>
+                                <span>vs</span>
+                                <span>Echipa 2</span>
+                            </li>
+                            <li class="match">
+                                <span>Echipa 3</span>
+                                <span>vs</span>
+                                <span>Echipa 4</span>
+                            </li>
+                            <li class="match">
+                                <span>Echipa 5</span>
+                                <span>vs</span>
+                                <span>Echipa 6</span>
+                            </li>
+                            <li class="match">
+                                <span>Echipa 7</span>
+                                <span>vs</span>
+                                <span>Echipa 8</span>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="match">
-                        <span>Player 3</span>
-                        <span>vs</span>
-                        <span>Player 4</span>
+                    <li class="round">
+                        <h3><font size="6">Runda 2</font></h3>
+                        <ul class="matches">
+                            <li class="match">
+                                <span>Necompletat</span>
+                                <span>vs</span>
+                                <span>Necompletat</span>
+                            </li>
+                            <li class="match">
+                                <span>Necompletat</span>
+                                <span>vs</span>
+                                <span>Necompletat</span>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="match">
-                        <span>Player 5</span>
-                        <span>vs</span>
-                        <span>Player 6</span>
-                    </li>
-                    <li class="match">
-                        <span>Player 7</span>
-                        <span>vs</span>
-                        <span>Player 8</span>
+                    <li class="round">
+                        <h3><font size="6">Finală</font></h3>
+                        <ul class="matches">
+                            <li class="match">
+                                <span>Necompletat</span>
+                                <span>vs</span>
+                                <span>Necompletat</span>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>
             <div class="tournament-title">
-                <h2 class="accent-white">Results</h2>
-            </div>
-            <div class="results">
-                <ul><center>
-                    <li>Player 1 def. Player 2</li>
-                    <li>Player 3 def. Player 4</li>
-                    <li>Player 5 def. Player 6</li>
-                    <li>Player 7 def. Player 8</li>
-                </ul>
-            </div>
+              <h2 class="accent-white"><font size="8">Premiul este</font></h2>
+              <img src="Logo_BG.png" alt="Imagine premiu"
+              width="600" 
+              height="600" />>
+          </div>          
         </div>
     </div>
 </body>
