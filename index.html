@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #003a69; /* Dark blue background */
+            background-color: #003a69;
             color: #fff;
             margin: 0;
             padding: 0;
@@ -18,7 +18,7 @@
             overflow: hidden;
         }
         header {
-            background: #003a69; /* Blue background */
+            background: #003a69;
             color: #fff;
             padding: 30px 0;
             text-align: center;
@@ -39,8 +39,8 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
-            flex: 1 1 300px; /* Minimum width of 300px */
-            max-width: 500px; /* Maximum width */
+            flex: 1 1 300px;
+            max-width: 500px;
         }
         .card h2 {
             text-align: center;
@@ -83,25 +83,32 @@
         .winner p {
             margin: 10px 0 0 0;
         }
-        /* Add styles for white accents */
         .accent-white {
             color: #ffffff;
             background-color: #1e3a5c;
             padding: 5px 10px;
             border-radius: 5px;
         }
-        /* Scroll Bar */
         ::-webkit-scrollbar {
             width: 12px;
         }
         ::-webkit-scrollbar-track {
-            background: #003a69; /* Darker background */
+            background: #003a69;
         }
         ::-webkit-scrollbar-thumb {
-            background-color: #069af0; /* Light blue color */
-            border-radius: 10px; /* Rounded edges */
-            border: 3px solid #2f2f2f; /* Darker border to match the track */
+            background-color: #069af0;
+            border-radius: 10px;
+            border: 3px solid #2f2f2f;
         }
+        .prize {
+    background-color: #155591;
+    padding: 100px;
+    margin-top: 500px;
+    margin-left: 450px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
     </style>
 </head>
 <body>
@@ -198,19 +205,17 @@
                 <font size="6">
                 <div class="winner">
                     <img src="Logo_BG.png" alt="Câștigător 1">
-                    <p>Se asteapta castigatorul</p> 
+                    <p>Victor123</p> 
                 </div>
                 <p style="margin-bottom: 10px;">‎</p>
                 <div class="winner">
                     <img src="Logo_BG.png" alt="Câștigător 2">
-                    <p>Se asteapta castigatorul</p>
+                    <p>El Comandante</p>
                 </div>
             </div>
-            <div><center>
-<p style="margin-bottom: 200px;">‎</p>
-<p style="margin-bottom: 200px;">‎</p>
-                <h2><font size="7">Premiul este</font></h2>
-                <img src="Logo_BG.png" alt="Imagine premiu" width="40%" height="auto" />
+            <div class="prize">
+                    <h2><font size="7">Premiul este</font></h2>
+                    <img src="prize.gif" alt="Imagine premiu" width="40%" height="auto" />
             </div>
         </div>
     </div>
