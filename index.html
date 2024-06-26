@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1e3a5c; /* Dark blue background */
+            background-color: #003a69; /* Dark blue background */
             color: #fff;
             margin: 0;
             padding: 0;
@@ -18,43 +18,43 @@
             overflow: hidden;
         }
         header {
-            background: #1e3a5c; /* Blue background */
+            background: #003a69; /* Blue background */
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 30px 0;
+            text-align: center;
             border-bottom: #77aaff 3px solid;
         }
         header h1 {
-            text-align: center;
-            text-transform: uppercase;
             margin: 0;
+            text-transform: uppercase;
         }
         .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
             padding: 20px;
-            background: #1e3a5c;
-            margin-top: 20px;
-            border-radius: 5px;
+        }
+        .card {
+            background: #003a69;
+            border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            flex: 1 1 300px; /* Minimum width of 300px */
+            max-width: 500px; /* Maximum width */
         }
-        .tournament-title {
+        .card h2 {
             text-align: center;
+            color: #77aaff;
             margin-bottom: 20px;
-            color: #1e3a5c; /* Dark blue text */
         }
-        .participants, .schedule, .results, .rounds {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #1e3a5c; /* Dark blue background */
-            border-radius: 5px;
-            color: rgb(252, 252, 252);
-        }
-        .participants ul, .schedule ul, .results ul, .rounds ul {
+        .card ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
-        .participants li, .schedule li, .results li, .rounds li {
-            background: #2d5d8a; /* Slightly lighter blue background */
-            margin: 5px 0;
+        .card li {
+            background: #155591;
+            margin: 10px 0;
             padding: 10px;
             border-radius: 5px;
         }
@@ -66,6 +66,23 @@
             flex: 1;
             text-align: center;
         }
+        .winners {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .winner {
+            margin: 10px 0;
+        }
+        .winner img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .winner p {
+            margin: 10px 0 0 0;
+        }
         /* Add styles for white accents */
         .accent-white {
             color: #ffffff;
@@ -73,38 +90,44 @@
             padding: 5px 10px;
             border-radius: 5px;
         }
+        /* Scroll Bar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #003a69; /* Darker background */
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #069af0; /* Light blue color */
+            border-radius: 10px; /* Rounded edges */
+            border: 3px solid #2f2f2f; /* Darker border to match the track */
+        }
     </style>
 </head>
 <body>
     <header>
         <img src="turnament.png" alt="Imagine premiu"
               width="1864" 
-              height="550" />
+              height="500" />
     </header>
-    <font size="5">
     <div class="container">
         <div class="content">
-            <div class="tournament-title">
-                <h2 class="accent-white">Echipe</h2>
-            </div>
-            <div class="Echipele">
+            <div class="card participants">
+                <h2>Echipe</h2>
                 <ul>
                     <li>Corcodus: victor123 (31476) + el comandante (33598)</li>
                     <li>Clanu Borcan: Pingu (5333) + Vamp (30513)</li>
                     <li>Magici Anului: Eduard#TragPentruLosVagos (29708) + Ștefan_rupe(28776)</li>
                     <li>Drogații: Luca (23966) + Zzdenis (16689)</li>
                     <li>Nuntasii: Falfi (13811) + alexutzuu (-69)</li>
-                    <li>Sefii Sefilor: Alex (5) + Mocanu (20378 )</li>
+                    <li>Sefii Sefilor: Alex (5) + Mocanu (20378)</li>
                 </ul>
             </div>
-            <div class="tournament-title">
-                <h2 class="accent-white">Runde</h2>
-            </div>
-            <div class="rounds">
-                <center>
+            <div class="card rounds">
+                <h2>Runde</h2>
                 <ul>
                     <li class="round">
-                        <h3><font size="6">Runda 1</font></h3>
+                        <h3>Runda 1</h3>
                         <ul class="matches">
                             <li class="match">
                                 <span>Echipa 1</span>
@@ -129,22 +152,37 @@
                         </ul>
                     </li>
                     <li class="round">
-                        <h3><font size="6">Runda 2</font></h3>
+                        <h3>Runda 2</h3>
                         <ul class="matches">
                             <li class="match">
-                                <span>Necompletat</span>
+                                <span>Echipa 1</span>
                                 <span>vs</span>
-                                <span>Necompletat</span>
+                                <span>Echipa 2</span>
                             </li>
                             <li class="match">
-                                <span>Necompletat</span>
+                                <span>Echipa 3</span>
                                 <span>vs</span>
-                                <span>Necompletat</span>
+                                <span>Echipa 4</span>
                             </li>
                         </ul>
                     </li>
                     <li class="round">
-                        <h3><font size="6">Finală</font></h3>
+                        <h3>Runda 3</h3>
+                        <ul class="matches">
+                            <li class="match">
+                                <span>Echipa 1</span>
+                                <span>vs</span>
+                                <span>Echipa 2</span>
+                            </li>
+                            <li class="match">
+                                <span>Echipa 3</span>
+                                <span>vs</span>
+                                <span>Echipa 4</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="round">
+                        <h3>Finală</h3>
                         <ul class="matches">
                             <li class="match">
                                 <span>Necompletat</span>
@@ -155,12 +193,25 @@
                     </li>
                 </ul>
             </div>
-            <div class="tournament-title">
-              <h2 class="accent-white"><font size="8">Premiul este</font></h2>
-              <img src="Logo_BG.png" alt="Imagine premiu"
-              width="600" 
-              height="600" />
-          </div>          
+            <div class="card winners">
+                <h2>Câștigători</h2>
+                <font size="6">
+                <div class="winner">
+                    <img src="Logo_BG.png" alt="Câștigător 1">
+                    <p>Victor123</p> 
+                </div>
+                <p style="margin-bottom: 10px;">‎</p>
+                <div class="winner">
+                    <img src="Logo_BG.png" alt="Câștigător 2">
+                    <p>El Comandante</p>
+                </div>
+            </div>
+            <div><center>
+<p style="margin-bottom: 200px;">‎</p>
+<p style="margin-bottom: 200px;">‎</p>
+                <h2><font size="7">Premiul este</font></h2>
+                <img src="Logo_BG.png" alt="Imagine premiu" width="40%" height="auto" />
+            </div>
         </div>
     </div>
 </body>
