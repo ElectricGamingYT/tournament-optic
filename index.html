@@ -13,39 +13,40 @@
             padding: 0;
         }
         .container {
-            width: 80%;
+            width: 95%;
             margin: 0 auto;
             overflow: hidden;
         }
         header {
             background: #003a69;
             color: #fff;
-            padding: 30px 0;
+            padding: 15px 0;
             text-align: center;
             border-bottom: #77aaff 3px solid;
         }
-        header h1 {
-            margin: 0;
-            text-transform: uppercase;
+        header img {
+            max-width: 100%;
+            height: auto;
         }
         .content {
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            padding: 20px;
+            padding: 10px;
         }
         .card {
             background: #003a69;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
-            padding: 20px;
-            flex: 1 1 300px;
-            max-width: 500px;
+            padding: 15px;
+            flex: 1 1 100%;
+            max-width: 100%;
+            margin-bottom: 20px; /* Adăugăm margin-bottom pentru a separa cardurile */
         }
         .card h2 {
             text-align: center;
             color: #77aaff;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         .card ul {
             list-style: none;
@@ -75,15 +76,15 @@
         .winner {
             margin: 10px 0;
             background: #155591;
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
             text-align: center;
         }
         .winner img {
             border-radius: 50%;
-            width: 100px;
-            height: 100px;
+            max-width: 100px;
+            height: auto;
         }
         .winner p {
             margin: 10px 0 0 0;
@@ -106,56 +107,19 @@
             border-radius: 10px;
             border: 3px solid #2f2f2f;
         }
-        .prize {
-            background-color: #155591;
-            padding: 85px;
-            margin-left: 408px;
-            margin-bottom: 150px;
-            margin-right: 400px;
-            margin-top: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
-        }
-        /*.program {
-            background-color: #155591;
-            padding: 85px;
-            margin-left: 408px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            margin-right: 400px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
-        }*/
-        /*  ORAR  */
-        .card.program {
-            font-size: 1.25em;
-            background-color: #003a69;
-            padding: 85px;
-            margin-left: 408px;
-            margin-right: 400px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
-        }
-        .card.program h2 {
-                color: #77aaff;
-                margin-bottom: 20px;
-         }
-        .card.program ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                text-align: left;
-        }
-         .card.program li {
-                background: #155591;
-                margin: 10px 0;
+        /* Media query pentru ecrane mai mici (telefoane mobile) */
+        @media (max-width: 768px) {
+            .container {
+                width: 100%;
+                padding: 10px; /* Adăugăm puțin padding pentru a separa conținutul de marginile ecranului */
+            }
+            .card {
                 padding: 10px;
-                border-radius: 5px;
+            }
+            .winner img {
+                max-width: 80px;
+            }
         }
-
     </style>
 </head>
 <body>
